@@ -12,6 +12,8 @@ class Complejo
 		salida=salida+"#{@b}i)"
 	elsif @b>0
 		salida=salida+"+#{@b}i)"
+	else
+		salida=salida+')'
 	end
 	salida
   end
@@ -19,7 +21,7 @@ class Complejo
     Complejo.new(@a + other.a, @b + other.b)
   end
   def - (other)
-    Complejo.new(@a-other.a,@b-other-b)
+    Complejo.new(@a - other.a,@b - other.b)
   end
 end
 

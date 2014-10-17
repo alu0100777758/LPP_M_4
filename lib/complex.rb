@@ -1,2 +1,2 @@
-require './SabatoComplex.rb'
-require './JavierComplex.rb'
+require 'lib/SabatoComplex.rb'
+require 'lib/JavierComplex.rb'
