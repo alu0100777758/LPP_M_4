@@ -1,4 +1,4 @@
-require 'lib/Complex.rb'
+require 'lib/complex.rb'
 require 'test/unit'
 
 class TestComplejo < Test::Unit::TestCase
