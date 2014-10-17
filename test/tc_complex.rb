@@ -14,6 +14,8 @@ class TestComplejo < Test::Unit::TestCase
     assert_equal("(5+5i)", (@unidad*5).to_s)
     assert_equal("(5+5i)", (@unidad+Complejo.new(4,4)).to_s)
     assert_equal("(-1-1i)",(@unidad-Complejo.new(2,2)).to_s)
+    assert_equal("(0)",(@unidad*@origen).to_s)
+    assert_equal("(0)",(@origen/@unidad).to_s)
   end
   def test_type_check
     assert_raise(RuntimeError) {Complejo.new('1','1')}
